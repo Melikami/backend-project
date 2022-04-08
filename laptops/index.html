@@ -10,16 +10,16 @@
 </head>
 <body>
     <button onclick="getDataFromStrapi();">Fetch products</button>
-    <div id="laptopFetched"></div>
+    <div id="laptopFetch"></div>
 
     <div>
-        <label for="user">Användarnamn:</label>
+        <label for="user">Username:</label>
         <input type="text" name="user" id="user" onchange="userValidate(this);">
-        <div id="userError" class="errorInfo"></div>
+        <div id="userErr" class="error"></div>
 
-        <label for="pass">Lösenord:</label>
+        <label for="pass">Password:</label>
         <input type="password" name="pass" id="pass" onchange="passValidate(this);">
-        <div id="passwordError" class="errorInfo"></div>
+        <div id="passErr" class="error"></div>
     </div>
     <div>
         <div>
@@ -40,7 +40,7 @@
         </div>
     </div>
     <div>
-        <button onclick="getToken();">Skapa en ny produkt</button>
+        <button onclick="getToken();">Create a new product</button>
     </div>
     
 </body>
